@@ -2,6 +2,22 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+h1{
+    font-size: xx-large;
+}
+.background{
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+}
+.home{
+    font-size: large;
+}
+
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -50,4 +66,8 @@
 .lowr{
     height: 160px;
     width: 180px;
+}
+
+.incoimg{
+    height: 40px;
 }
