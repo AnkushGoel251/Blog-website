@@ -12,13 +12,17 @@ const aboutContent = "This blog website is free for all,add as many as blogs you
 const contactContent = "Thanks for visiting contact page!";
 
 const app = express();
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+  }
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/blogdb').then(() => {
+mongoose.connect('mongodb+srv://admin-ankush:Ankush251@cluster0.gtboy.mongodb.net/blogdb').then(() => {
 console.log("Connected to Database");
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);
@@ -52,7 +56,7 @@ app.get("/home",function(req,res){
 }
 
     res.render("home.ejs",{home:homeStartingContent,
-    posts:dbs
+    posts:dbs,port
     });
    
 });
@@ -74,7 +78,7 @@ app.get("/",function(req,res){
     }
     
         res.render("home.ejs",{home:homeStartingContent,
-            posts:dbs
+            posts:dbs,port
         });
 });
 
@@ -118,6 +122,9 @@ app.post("/compose",function(req,res){
 
 
 
-app.listen(3000, function() {
+
+
+
+app.listen(port, function() {
   console.log("Server online!");
 });

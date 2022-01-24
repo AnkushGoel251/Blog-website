@@ -1,3 +1,5 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -7,17 +9,14 @@ h1{
 }
 .background{
     width: 100%;
-    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+    background-image: url("back.png");
 }
 .home{
     font-size: large;
 }
-
-
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -35,6 +34,15 @@ h1{
 	padding-bottom: 60px;
 }
 
+textarea{
+    height: 6em;
+    width: 23em;
+    resize: none;
+}
+.titleinput{
+    width: 23em;
+}
+
 .footerh {
 	position: relative;
 	text-align: center;
@@ -44,11 +52,10 @@ h1{
 	background-color: black;
 }
 .footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 	background-color: black;
 }
 
@@ -56,6 +63,164 @@ h1{
 	margin-top: 25px;
 	font-size: 12px;
   color: #fff;
+}
+.lowa{
+    height: 80px;
+    width: 80px;
+    margin-left: 30px;
+}
+
+.lowr{
+    height: 60px;
+    width: 80px;
+}
+
+.incoimg{
+    height: 20px;
+}
+
+/* Medium devices (landscape tablets, 648px and up) */
+@media only screen and (min-width: 648px) {
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    .background{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url("back.png");
+    }
+    .home{
+        font-size: large;
+    }
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+    .navbar-nav  li a:hover {
+        color: #1abc9c !important;
+    }
+    
+    textarea{
+        height: 10em;
+        width: 44em;
+        resize: none;
+    }
+    .titleinput{
+        width: 44em;
+        height: 2em;
+    }
+    
+    
+    .footer-padding {
+        padding-bottom: 60px;
+    }
+    
+    .footer {
+        
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .footer p {
+        margin-top: 25px;
+        font-size: 12px;
+       color: #fff;
+    }
+    .lowa{
+        height: 180px;
+        width: 180px;
+        margin-left: 80px;
+    }
+    
+    .lowr{
+        height: 160px;
+        width: 180px;
+    }
+    
+    .incoimg{
+        height: 40px;
+    }
+
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+h1{
+    font-size: xx-large;
+}
+.background{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("back.png");
+}
+.home{
+    font-size: large;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+textarea{
+    height: 20em;
+    width: 96em;
+    resize: none;
+}
+.titleinput{
+    width: 96em;
+    height: 3em;
+}
+
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	
+	text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	background-color: black;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+   color: #fff;
 }
 .lowa{
     height: 180px;
@@ -71,3 +236,7 @@ h1{
 .incoimg{
     height: 40px;
 }
+
+} 
+
+

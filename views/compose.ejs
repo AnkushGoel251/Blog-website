@@ -2,13 +2,12 @@
     <h1 style="font-family: 'Merriweather', serif;">Compose</h1>
     <form action="/compose" method="post">
         <label for="newp">Title <br>
-            <input type="text" name="newp" style="width: 1350px; height: 40px;"> <br></label> <br>
+            <input type="text" name="newp" class="titleinput"> <br></label> <br>
         <label for="cont">
              Post <br>
-             <textarea name="posbod" id="" cols="148" rows="10"></textarea>
-</label> <br>
+             <textarea name="posbod" id="" ></textarea>
+        </label> <br>
         
         <button class="btn btn-primary" type="submit">Publish</button>
     </form>
-    
-    <%- include('partials/footer.ejs'); %>
+  <%- include('partials/footer.ejs'); %>    
