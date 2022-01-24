@@ -1,5 +1,12 @@
 # Blog-website
 A blog website which let users post anonymous and read others
+ <p class="home"> Write anaymous post,let your heart out but follow post writing guidelines:</p>
+    <ul>
+        <li class="home">Don’t post anything that contains any material that is abusive, vulgar, obscene, hateful, fraudulent, unlawful, threatening, or harrassing towards any person whether a user on this blog or not.</li>
+        <li class="home">Don’t defame others.</li>
+        <li class="home">Don’t use posts to promote products or services.</li>
+        <li class="home">Don’t use third-party content without permission unless you are permitted to do so by copyright law.</li>
+    </ul>
 
 
 ## Languages and tools used:
