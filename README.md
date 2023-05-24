@@ -7,6 +7,9 @@ A blog website which let users post anonymous and read others
         <li class="home">Don’t use posts to promote products or services.</li>
         <li class="home">Don’t use third-party content without permission unless you are permitted to do so by copyright law.</li>
     </ul>
+    
+# Visit
+Deployed on Render, to visit [click here](https://blog-website-6k85.onrender.com/)
 
 # Demo
 
