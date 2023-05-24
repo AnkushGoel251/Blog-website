@@ -9,14 +9,17 @@ A blog website which let users post anonymous and read others
     </ul>
 
 # Demo
-![Watch the video](https://drive.google.com/file/d/1fZk2Oh4l4TiTnJd5KaCexR1EP-Us866c/view?usp=share_link)
+
+
+https://github.com/AnkushGoel251/Blog-website/assets/77546629/f24d155c-b611-4f1a-92ce-d6e962784050
+
 
 ## Languages and tools used:
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
 
 
 ## Contributing
-We welcome contributions to Chat Webapp. If you would like to contribute, please follow these guidelines:
+We welcome contributions to Blog Website. If you would like to contribute, please follow these guidelines:
 
 <ul>
         <li class="home">Fork the repository.</li>
