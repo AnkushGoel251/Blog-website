@@ -3,13 +3,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+require('dotenv').config()
 const mongoose= require("mongoose");
-const { stringify } = require("nodemon/lib/utils");
-const { forEach } = require("lodash");
+const Password = process.env.Password;
+
 
 const homeStartingContent = "Welcome! to this blog website. You can add any blog you want which follows our guidelines(visit about page to see guidelines). Hope you enjoy this website.If you can't find your blog hit refresh";
 const aboutContent = "This blog website is free for all,add as many as blogs you want. This website is made by Ankush Goel for contacting creator check Contact page.";
 const contactContent = "Thanks for visiting contact page!";
+
+// Starting express server
 
 const app = express();
 let port = process.env.PORT;
@@ -17,17 +20,22 @@ if (port == null || port == "") {
     port = 3000;
   }
 
+// templates
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://admin-ankush:Ankush251@cluster0.gtboy.mongodb.net/blogdb').then(() => {
+// MongoDB Atlas database connnection
+
+mongoose.connect('mongodb+srv://admin-ankush:' + Password + '@cluster0.gtboy.mongodb.net/blogdb').then(() => {
 console.log("Connected to Database");
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);
 });
 
+
+// Schema of data base
 const blogSchema = new mongoose.Schema({
     title:String,
     content:String
@@ -36,8 +44,11 @@ const blogSchema = new mongoose.Schema({
 const Blog = mongoose.model("Blog",blogSchema);
 
 
-
+// Initalising empty array of blogs
 let dbs=[];
+
+
+// Routes
 
 app.get("/home",function(req,res){
      if(dbs.length==0){
@@ -65,7 +76,7 @@ app.get("/",function(req,res){
     if(dbs.length==0){
         Blog.find(function(err,blogs){
             if(err)
-            console.log(err);
+            console.log(err); // Error handling
     
             blogs.forEach(function(blog){
                 var post={
@@ -119,9 +130,6 @@ app.post("/compose",function(req,res){
         dbs=[];
     res.redirect("/home");
 });
-
-
-
 
 
 
